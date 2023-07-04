@@ -7,7 +7,7 @@
     "tabs",
     "clipboardRead",
     "activeTab",
-    "scripting"~
+    "scripting"
   ],
   "content_scripts": [
     {
