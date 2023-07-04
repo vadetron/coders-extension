@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome2Whatsapp",
+  "description": "Send copied text to whatsapp",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "clipboardRead",
+    "activeTab",
+    "scripting"~
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Copy to WhatsApp",
+    "default_popup": "popup.html",
+    "default_icon": "image.png"
+  }
+}
